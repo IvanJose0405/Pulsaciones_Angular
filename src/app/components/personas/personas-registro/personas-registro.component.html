@@ -1,0 +1,25 @@
+<form>
+    <div class="mb-3">
+        <label class="form-label">Identificacion</label>
+        <input type="number" [(ngModel)]="persona.identification" class="form-control" name="Identificacioninput" placeholder="Ingrese su Identificacion">
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" [(ngModel)]="persona.nombre" class="form-control" name="Nombreinput" placeholder="Ingrese su Nombre">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Edad</label>
+        <input type="text"  [(ngModel)]="persona.edad"  class="form-control" name="Edadinput" placeholder="Ingrese su Edad">
+    </div>
+    <label class="form-label">Sexo</label>
+    <select class="form-select"  [(ngModel)]="persona.sexo" name="sexo" aria-label="Default select example">
+        <option selected>Seleccione</option>
+        <option value="m">Masculino</option>
+        <option value="f">Femenino</option>
+        
+      </select>
+
+    <button type="submit" class="btn btn-primary" (click)="add()" >Calcular</button>
+</form>

@@ -1,0 +1,18 @@
+<table class="table table-hover">
+    <thead>
+        <th>identification</th>
+        <th>nombre</th>
+        <th>Edad</th>
+        <th>sexo</th>
+        <th>pulsaciones</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of personas; index as i">
+            <td>{{e.identification}}</td>
+            <td>{{e.nombre}}</td>
+            <td>{{e.edad}}</td>
+            <td>{{e.sexo}}</td>
+            <td>{{e.pulsacion}}</td>
+        </tr>
+    </tbody>
+  </table>
